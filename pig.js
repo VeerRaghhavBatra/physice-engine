@@ -1,13 +1,13 @@
-class Box {
-  constructor(x,y,width,height){
+class Pig {
+  constructor(x,y){
     var options = {
       restitution : 0.8,
       friction :1.0,
       density : 1.0
     }
-    this.body = Bodies.rectangle(x,y,width,height,options);  // Add the body you have created to your world.
-    this.w= width;
-    this.h = height;
+    this.body = Bodies.rectangle(x,y,50,50,options);  // Add the body you have created to your world.
+    this.w= 50;
+    this.h = 50;
 
     World.add(world,this.body)//  World.add(world you have created, body you want to add);
   }
@@ -21,7 +21,7 @@ class Box {
     rotate(this.body.angle);
     strokeWeight(5);
     stroke("green");
-    fill("yellow");
+    fill("orange");
     rectMode(CENTER);
     rect(0,0,this.w,this.h);
     pop ();
