@@ -1,2 +1,2 @@
-# p5.play-boilerplate
-Boiler plate for p5.play
+# angryBirdsStage2
+Angry Birds stage 2 with Class Inheritance and Images
