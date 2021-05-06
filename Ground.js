@@ -1,5 +1,7 @@
 class Ground {
     constructor(x,y,width,height) {
+
+      // JSON Format 
       var options = {
           isStatic: true
       }
@@ -7,6 +9,7 @@ class Ground {
       this.width = width;
       this.height = height;
       World.add(world, this.body);
+      console.log(this.body);
     }
     display(){
       var pos =this.body.position;
@@ -15,3 +18,8 @@ class Ground {
       rect(pos.x, pos.y, this.width, this.height);
     }
   };
+
+
+  // position 
+    // x : 200,
+      //  y :40
