@@ -8,7 +8,9 @@ class Slingshot {
       length : 50
 
     };
-
+    this.sling1=loadImage("sprites/sling1.png");
+    this.sling2=loadImage("sprites/sling2.png");
+    this.sling3=loadImage("sprites/sling3.png");
     this.slingsh = Constraint.create(options);
     this.pointB=pointB
     World.add(world,this.slingsh);
@@ -19,6 +21,8 @@ class Slingshot {
   }
 
   display(){
+    image(this.sling1,200,20);
+    image(this.sling2,170,20);
     if(this.slingsh.bodyA){
       var B1 = this.slingsh.bodyA.position;
       var B2 = this.pointB;
